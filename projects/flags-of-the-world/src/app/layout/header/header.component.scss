@@ -1,0 +1,50 @@
+:host {
+  display: flex;
+
+  > .section {
+    flex: 1;
+  }
+
+  > .left {
+    display: flex;
+
+    > .logo {
+      margin: auto;
+      display: flex;
+      width: 90%;
+      align-items: center;
+
+      > .logo-img {
+        flex: 1;
+        text-align: center;
+        > img {
+          width: 70%;
+        }
+      }
+
+      > .logo-title {
+        flex: 2.5;
+        text-transform: uppercase;
+        font-family: "Special Elite", cursive;
+        li {
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  > .center {
+    display: flex;
+    > .mission {
+      margin: auto;
+      width: 90%;
+
+      display: flex;
+      > span {
+        margin: auto;
+        text-transform: capitalize;
+        font-family: "Bebas Neue", cursive;
+      }
+    }
+  }
+}

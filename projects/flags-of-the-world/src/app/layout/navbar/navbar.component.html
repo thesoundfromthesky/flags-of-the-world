@@ -1,1 +1,25 @@
-<p>navbar works!</p>
+<nav>
+  <ol>
+    <li>
+      <a
+        class="link"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >home</a
+      >
+    </li>
+    <li>      <a
+        class="link"
+        routerLink="/test"
+        routerLinkActive="active"
+        >about</a
+      ></li>
+    <li>      <a
+        class="link"
+        routerLink="/test2"
+        routerLinkActive="active"
+        >testzz</a
+      ></li>
+  </ol>
+</nav>

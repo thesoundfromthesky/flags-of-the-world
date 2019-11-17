@@ -154,10 +154,10 @@ input {
   background: none;
   border: none;
   outline: none;
-  caret-color: black;
+  caret-color: #000;
 
   &::placeholder {
-    color: black;
+    color: #000;
   }
 }
 

@@ -9,9 +9,10 @@ import { LayoutComponent } from "./layout.component";
 import { ContentComponent } from "./content/content.component";
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [LayoutComponent, ContentComponent, NavbarComponent, FooterComponent],
+  declarations: [LayoutComponent, ContentComponent, NavbarComponent, FooterComponent, HeaderComponent],
   imports: [CommonModule, LayoutRoutingModule, ...LAYOUT_MODULE_IMPORTS]
 })
 export class LayoutModule {}

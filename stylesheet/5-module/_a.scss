@@ -1,9 +1,9 @@
 .link {
-  color: #fff;
-
+  color: #000;
+  text-transform: capitalize;
   transition: color 0.2s ease-in-out;
 }
 
 .active {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(189, 84, 84, 0.5);
 }
