@@ -25,9 +25,15 @@
             "aot": false,
             "assets": [
               "projects/flags-of-the-world/src/favicon.ico",
-              "projects/flags-of-the-world/src/assets"
+              "projects/flags-of-the-world/src/assets",
+              {
+                "glob": "**/*",
+                "input": "./assets/",
+                "output": "./assets"
+              }
             ],
             "styles": [
+              "stylesheet/_stylesheet.scss",
               "projects/flags-of-the-world/src/styles.scss"
             ],
             "scripts": []
@@ -92,9 +98,7 @@
               "projects/flags-of-the-world/src/favicon.ico",
               "projects/flags-of-the-world/src/assets"
             ],
-            "styles": [
-              "projects/flags-of-the-world/src/styles.scss"
-            ],
+            "styles": ["projects/flags-of-the-world/src/styles.scss"],
             "scripts": []
           }
         },
@@ -106,9 +110,7 @@
               "projects/flags-of-the-world/tsconfig.spec.json",
               "projects/flags-of-the-world/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -124,6 +126,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "flags-of-the-world"
 }

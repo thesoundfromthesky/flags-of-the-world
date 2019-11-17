@@ -1,0 +1,31 @@
+$navbar-height: 100px;
+$min-height: 100vh;
+
+:host {
+  min-height: $min-height;
+
+  display: grid;
+  grid-template-columns: minmax(auto, calc(var(--W) * 1px));
+  grid-template-rows:
+    minmax($navbar-height, auto) minmax(
+      calc(#{$min-height} - #{$navbar-height}),
+      auto
+    )
+    minmax(150px, auto);
+
+  justify-content: center;
+
+  background: green;
+}
+
+layout-navbar {
+  background: red;
+}
+
+layout-content {
+  background: blue;
+}
+
+layout-footer {
+  background: yellow;
+}
