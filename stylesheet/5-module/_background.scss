@@ -1,0 +1,33 @@
+.bgc {
+  --bgc: transparent;
+
+  --background-color-bgc: var(--bgc);
+
+  background-color: var(--background-color-bgc);
+  // @include media(laptop) {
+  // --bgc: ;
+  // }
+}
+
+.bg-img {
+  --bg-url: none;
+  --bg-width: none;
+  --bg-x: none;
+  --bg-y: none;
+
+  --background-url: var(--bg-url);
+  --background-x: #{varpx(--bg-x)};
+  --background-y: #{varpx(--bg-y)};
+  --background-size: #{varpx(--bg-width)};
+
+  background-image: var(--background-url);
+  background-repeat: no-repeat;
+  background-position: var(--background-x) var(--background-y);
+  background-size: var(--background-size);
+
+  @include media(laptop) {
+    --background-x: #{product(--bg-x, --width-ratio)};
+    --background-y: #{product(--bg-y, --width-ratio)};
+    --background-size: #{product(--bg-width, --width-ratio)};
+  }
+}

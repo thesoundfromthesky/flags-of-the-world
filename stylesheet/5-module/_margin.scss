@@ -1,0 +1,58 @@
+.my {
+  --my: none;
+
+  --margin-my: #{varpx(--my)};
+
+  margin-top: var(--margin-my);
+  margin-bottom: var(--margin-my);
+
+  @include media(laptop) {
+    --margin-my: #{product(--my, --width-ratio)};
+  }
+}
+
+.mt {
+  --mt: none;
+
+  --margin-top-mt: #{varpx(--mt)};
+
+  margin-top: var(--margin-top-mt);
+
+  @include media(laptop) {
+    --margin-top-mt: #{product(--mt, --width-ratio)};
+  }
+}
+
+.mb {
+  --mb: none;
+
+  --margin-bottom-mb: #{varpx(--mb)};
+
+  margin-bottom: var(--margin-bottom-mb);
+  @include media(laptop) {
+    --margin-bottom-mb: #{product(--mb, --width-ratio)};
+  }
+}
+
+.mr {
+  --mr: none;
+
+  --margin-right-mr: #{varpx(--mr)};
+  margin-right: var(--margin-right-mr);
+
+  @include media(laptop) {
+    --margin-right-mr: #{product(--mr, --width-ratio)};
+  }
+}
+
+.ml {
+  --ml: none;
+
+  --margin-left-ml: #{varpx(--ml)};
+
+  margin-left: var(--margin-left-ml);
+
+  @include media(laptop) {
+    --margin-left-ml: #{product(--ml, --width-ratio)};
+  }
+}

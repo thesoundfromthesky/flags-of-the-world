@@ -1,0 +1,11 @@
+.box-shadow {
+  --bsc: none;
+  --bsb: none;
+
+  --box-shadow-blur: #{varpx(--bsb)};
+  box-shadow: 0 0 var(--box-shadow-blur) 0 var(--bsc);
+
+  @include media(laptop) {
+    --box-shadow-blur: #{product(--bsb, --width-ratio)};
+  }
+}
