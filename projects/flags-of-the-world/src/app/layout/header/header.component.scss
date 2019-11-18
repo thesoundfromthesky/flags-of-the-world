@@ -1,50 +1,51 @@
 :host {
   display: flex;
+}
 
-  > .section {
+.section.left,
+.section.center,
+.section.right {
+  flex: 1;
+  display: flex;
+
+  > .logo,
+  .mission,
+  .tools {
+    margin: auto;
+    width: 90%;
+    min-height: 80%;
+
+    box-shadow: 10px 0 6px -9.3px #000;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  > .logo-img {
     flex: 1;
-  }
-
-  > .left {
-    display: flex;
-
-    > .logo {
-      margin: auto;
-      display: flex;
-      width: 90%;
-      align-items: center;
-
-      > .logo-img {
-        flex: 1;
-        text-align: center;
-        > img {
-          width: 70%;
-        }
-      }
-
-      > .logo-title {
-        flex: 2.5;
-        text-transform: uppercase;
-        font-family: "Special Elite", cursive;
-        li {
-          line-height: 1;
-        }
-      }
+    text-align: center;
+    > img {
+      width: 70%;
     }
   }
 
-  > .center {
-    display: flex;
-    > .mission {
-      margin: auto;
-      width: 90%;
-
-      display: flex;
-      > span {
-        margin: auto;
-        text-transform: capitalize;
-        font-family: "Bebas Neue", cursive;
-      }
+  > .logo-title {
+    flex: 2.5;
+    text-transform: uppercase;
+    font-family: "Special Elite", cursive;
+    li {
+      line-height: 1;
     }
+  }
+}
+
+.mission {
+  display: flex;
+  > span {
+    margin: auto;
+    text-transform: capitalize;
+    font-family: "Bebas Neue", cursive;
   }
 }
