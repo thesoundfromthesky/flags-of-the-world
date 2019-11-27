@@ -1,25 +1,21 @@
 $header-height: 150px;
 $navbar-height: 60px;
+$footer-height: 150px;
 $min-height: 100vh;
 
 :host {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+
   min-height: $min-height;
 
   display: grid;
-  grid-template-columns: minmax(auto, calc(var(--W) * 1px));
+  grid-template-columns: minmax(0, calc(var(--W) * 1px));
   grid-template-rows:
     minmax($header-height, auto)
     minmax($navbar-height, auto)
     minmax(calc(#{$min-height} - #{$header-height + $navbar-height}), auto)
-    minmax(150px, auto);
+    minmax($footer-height, auto);
 
   justify-content: center;
-}
-
-layout-content {
-  background: blue;
-}
-
-layout-footer {
-  background: yellow;
 }

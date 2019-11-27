@@ -129,10 +129,13 @@ table {
 }
 
 /* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ (2015/04/28)*/
-*,
-:before,
-:after {
+html {
   box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 //https://fvsch.com/styling-buttons/
@@ -160,4 +163,3 @@ input {
     color: #000;
   }
 }
-

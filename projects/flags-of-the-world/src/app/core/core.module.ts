@@ -4,14 +4,10 @@ import {
   Optional,
   SkipSelf
 } from "@angular/core";
-import { CommonModule } from "@angular/common";
 
 import { CORE_MODULE_PROVIDERS } from "./core.module.dependency";
 
-@NgModule({
-  declarations: [],
-  imports: [CommonModule]
-})
+@NgModule()
 export class CoreModule {
   // about singleton service
   // https://angular.io/guide/singleton-services

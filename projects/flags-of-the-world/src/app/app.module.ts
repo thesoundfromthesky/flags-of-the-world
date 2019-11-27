@@ -12,7 +12,6 @@ import {
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, ...APP_MODULE_IMPORTS],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

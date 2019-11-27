@@ -1,18 +1,12 @@
 <nav>
-    <ol>
-      <li>
-        <a
-          routerLink="/"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          ><span>home</span></a
-        >
-      </li>
-      <li>
-        <a routerLink="/test" routerLinkActive="active"><span>about</span></a>
-      </li>
-      <li>
-        <a routerLink="/test2" routerLinkActive="active"><span>testzz</span></a>
-      </li>
-    </ol>
+  <ol>
+    <li *ngFor="let navItem of navItems; trackBy:trackByFn">
+      <a
+        [routerLink]="navItem.link"
+        [routerLinkActive]="navItem.active"
+        [routerLinkActiveOptions]="navItem.options"
+        ><span>{{ navItem.name }}</span></a
+      >
+    </li>
+  </ol>
 </nav>
