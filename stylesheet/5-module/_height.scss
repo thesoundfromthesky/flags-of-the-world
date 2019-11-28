@@ -1,8 +1,0 @@
-$header-height: 150px;
-$navbar-height: 60px;
-$min-height: 100vmin;
-
-
-:root {
-  --display-height: calc(#{$min-height} - #{$header-height + $navbar-height});
-}
