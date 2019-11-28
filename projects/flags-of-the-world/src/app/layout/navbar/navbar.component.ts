@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {}
 
-  tracnByFn(i: number, e: any) {
+  trackByFn(i: number, e: any) {
     return e.id;
   }
 }
