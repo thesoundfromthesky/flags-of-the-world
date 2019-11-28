@@ -1,4 +1,8 @@
-# Portfolio
+# Flags of the World
+
+This app fetches country data from https://restcountries.eu/
+
+## Angular Version
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
